@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
     <!-- Responsive navbar -->
-    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky">
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-50">
+
 
         <h1 class="text-2xl">Greenden</h1>
 
@@ -19,37 +24,78 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
-        <ul class="flex gap-5 text-gray-600 cursor-pointer hidden md:flex">
-            <li><a href="./index.html"class=" hover:text-black hover:underline">Home</a></li>
-            <li><a href="./product.html"class=" hover:text-black hover:underline">Products</a></li>
-            <li><a href="./contact.html"class=" hover:text-black hover:underline">Contact</a></li>
+        <ul class="flex gap-2 text-gray-600 cursor-pointer hidden md:flex">
+            <li><a href="./index.html" class="p-2 rounded-xl hover:text-black hover:bg-slate-200">Home</a></li>
+            <li><a href="./product.html" class="p-2 rounded-xl hover:text-black hover:bg-slate-200">Products</a></li>
+            <li><a href="./contact.html" class="p-2 rounded-xl hover:text-black hover:bg-slate-200">Contact</a></li>
         </ul>
     </nav>
 
     <!-- header -->
-    <header class="bg-green-100 p-4 md:p-6 justify-center flex">
-        <div>
-            <p class="mb-4">We offer you a wide range of Artificial and Natural Flowers</p>
-            <h1 class="font-bold text-3xl md:text-5xl mb-5">Plants for your Interior</h1>
+<section class="bg-green-100 py-12 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+
+
+            <!-- Left Content -->
             <div>
-                <button class="bg-black text-white rounded p-2">Shop Now</button>
-                <button class="bg-white rounded p-2 border border-black">Watch Video</button>
+                <p class="text-green-700 font-medium mb-3">
+                    🌿 We offer a wide range of artificial & natural plants
+                </p>
+
+                <h1 class="text-5xl font-extrabold leading-tight mb-6">
+                    Plants for Your <br>
+                    <span class="text-green-600">Interior</span>
+                </h1>
+
+                <div class="flex gap-4 mb-8">
+                    <button
+                        class="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition">
+                        Shop Now
+                    </button>
+                    <button
+                        class="border-2 border-green-600 text-green-600 px-6 py-3 rounded-xl font-semibold hover:bg-green-600 hover:text-white transition">
+                        Watch Video
+                    </button>
+                </div>
+
+                <div class="flex gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold">160+</h3>
+                        <p class="text-gray-700 text-sm">Plant Species</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">100+</h3>
+                        <p class="text-gray-700 text-sm">Happy Clients</p>
+                    </div>
+                </div>
             </div>
-            <p class="mt-5">160+ Plant Species | 100+ Clients</p>
-        </div>
 
+            <!-- Right Image -->
+            <div class="hidden md:grid grid-cols-2 gap-6 relative">
 
-        <div class="p-5 hidden md:block">
-            <img src="/images/header image.jpg" alt="Header image" class="w-50">
-        </div>
-    </header>
+                <!-- Top Left -->
+                <img src="./images/header_image.jpg"
+                    class="rounded-3xl shadow-2xl hover:scale-105 transition duration-300" />
+
+                <!-- Top Right -->
+                <img src="./images/header-image-2.jpg"
+                    class="rounded-3xl shadow-2xl hover:scale-105 transition duration-300" />
+
+                <!-- Bottom Center -->
+                <img src="./images/header-image-3.jpg"
+                    class="col-span-2 mx-auto rounded-3xl shadow-2xl hover:scale-105 transition duration-300" />
+
+            </div>
+
+    </section>
+
 
     <!-- About Section -->
     <section class="text-center mt-5">
         <h2 class="text-2xl font-bold">About Us</h2>
         <p>This site for those who admire the beauty and harmony of nature</p>
         <div class="md:flex">
-            <div class="border border-black p-2 m-6">
+            <div class="shadow-xl border border-black p-2 m-6 rounded-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="inline w-16">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -57,11 +103,9 @@
                 </svg>
 
                 <h2 class="text-xl font-medium">Large Assortment</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aspernatur nam aliquam, quia commodi
-                    ipsam aperiam quo molestiae iure. Perferendis voluptatibus unde inventore velit iste possimus iusto
-                    tempore consectetur voluptate!</p>
+                <p class="p-4">Explore a wide collection of indoor and outdoor plants, planters, and accessories carefully curated to suit every space, style, and lifestyle need.</p>
             </div>
-            <div class="border border-black p-2 m-6">
+            <div class="shadow-xl border border-black p-2 m-6 rounded-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="inline w-16">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -70,11 +114,9 @@
 
 
                 <h2 class="text-xl font-medium">Free and Fast Shipping</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aspernatur nam aliquam, quia commodi
-                    ipsam aperiam quo molestiae iure. Perferendis voluptatibus unde inventore velit iste possimus iusto
-                    tempore consectetur voluptate!</p>
+                <p class="p-4">Enjoy free, fast, and reliable delivery on all orders, ensuring your plants arrive fresh, healthy, and ready to brighten your home.</p>
             </div>
-            <div class="border border-black p-2 m-6">
+            <div class="shadow-xl border border-black p-2 m-6 rounded-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="inline w-16">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -83,86 +125,137 @@
 
 
                 <h2 class="text-xl font-medium">24/7 Support</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aspernatur nam aliquam, quia commodi
-                    ipsam aperiam quo molestiae iure. Perferendis voluptatibus unde inventore velit iste possimus iusto
-                    tempore consectetur voluptate!</p>
+                <p class="p-4">Our dedicated support team is available 24/7 to assist with orders, plant care guidance, and any questions you may have.</p>
             </div>
         </div>
     </section>
 
     <!-- Best Seller -->
-    <section>
-        <h1 class="text-center font-bold text-3xl">Best Seller</h1>
+    <section class="bg-slate-100 p-5">
+        <h1 class="text-center font-bold text-3xl">⭐Best Seller⭐</h1>
 
         <div class="grid grid-cols-2 mt-5 gap-5 md:grid-cols-4">
             <div class="text-center">
                 <img src="./images/Bestseller_1.jpg" alt=""
-                    class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h2>Rose Plant</h2>
-                <p>$20</p>
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg">
+                <div class="hover:bg-green-200 rounded-xl">
+                    <h3 class="mt-3 text-lg font-semibold">Rose Plant</h3>
+                    <p class="text-green-600 font-bold">₹499</p>
+                </div>
             </div>
             <div class="text-center">
                 <img src="./images/bestseller_2.jpg" alt=""
-                    class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h2>Rose Plant</h2>
-                <p>$20</p>
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg">
+                <div class="hover:bg-green-200 rounded-xl">
+                    <h3 class="mt-3 text-lg font-semibold">Snake Plant</h3>
+                    <p class="text-green-600 font-bold">₹399</p>
+                </div>
             </div>
             <div class="text-center">
                 <img src="./images/Bestseller_3.jpg" alt=""
-                    class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h2>Rose Plant</h2>
-                <p>$20</p>
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg">
+                <div class="hover:bg-green-200 rounded-xl">
+                    <h3 class="mt-3 text-lg font-semibold">Spider Plant</h3>
+                    <p class="text-green-600 font-bold">₹399</p>
+                </div>
             </div>
             <div class="text-center">
                 <img src="./images/bestseller_4.jpg" alt=""
-                    class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h2>Rose Plant</h2>
-                <p>$20</p>
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-lg">
+                <div class="hover:bg-green-200 rounded-xl">
+                    <h3 class="mt-3 text-lg font-semibold">Swiss Cheese Plant</h3>
+                    <p class="text-green-600 font-bold">₹499</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- reviews -->
     <section>
-        <h1 class="text-center text-3xl font-bold mt-5">Customer Reviews</h1>
+        <h2 class="text-3xl font-bold text-center flex items-center justify-center gap-3 mt-10">
+  Customer Reviews
+  <i class="fa-solid fa-thumbs-up text-green-900"></i>
+</h2>
+
         <div class="m-6">
-            <div class="border bg-green-900 text-white p-5 mb-5">
+            <div class="border bg-green-900 text-white p-5 mb-5 rounded-2xl">
+                <h2 class="text-yellow-300">Genny Mathew </h2>
+                <p>★★★★★</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, enim dolor expedita autem unde
                     amet, eveniet nemo eos laboriosam asperiores molestias delectus alias quae sed ratione nam,
                     repudiandae quaerat velit.</p>
-                <h2 class="text-yellow-300">Genny Mathew</h2>
+
             </div>
-            <div class="border bg-green-900 text-white p-5 mb-5">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, enim dolor expedita autem unde
-                    amet, eveniet nemo eos laboriosam asperiores molestias delectus alias quae sed ratione nam,
-                    repudiandae quaerat velit.</p>
+            <div class="border bg-green-900 text-white p-5 mb-5 rounded-2xl">
                 <h2 class="text-yellow-300">Jim</h2>
-            </div>
-            <div class="border bg-green-900 text-white p-5 mb-5">
+                <p>★★★★★</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, enim dolor expedita autem unde
                     amet, eveniet nemo eos laboriosam asperiores molestias delectus alias quae sed ratione nam,
                     repudiandae quaerat velit.</p>
+
+            </div>
+            <div class="border bg-green-900 text-white p-5 mb-5 rounded-2xl">
                 <h2 class="text-yellow-300">Parker</h2>
+                <p>★★★★★</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, enim dolor expedita autem unde
+                    amet, eveniet nemo eos laboriosam asperiores molestias delectus alias quae sed ratione nam,
+                    repudiandae quaerat velit.</p>
+
             </div>
         </div>
     </section>
 
     <!-- join our -->
-     <section class="text-center">
+    <section class="text-center mt-10 p-5">
         <h1 class="text-3xl font-bold">Join our News Letter</h1>
         <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
-        <input type="text" class="border border-black m-3" style="width: 80%">
+        <input type="text" class="border border-black m-3 p-2 rounded-xl" style="width: 80%"
+            placeholder=" Write your News Letter....">
         <br>
-        <button type="submit" class="bg-black text-white p-3 m-1 rounded hover:bg-white hover:text-black border underline hover:border-black">Subscribe</button>
-     </section>
+        <button type="submit"
+            class="bg-black hover:shadow-2xl text-white p-2 m-1 rounded hover:bg-white hover:text-black border underline hover:border-black">Subscribe</button>
+    </section>
 
-     <!-- footer -->
-      <section class="bg-green-100 p-10 flex flex-col gap-5">
-        <h1 class="font-bold text-4xl">Greenden</h1>
-        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
-        <p>@ 2021 Greenday.com</p>
+    <!-- footer -->
+    <footer class="bg-green-100 p-10 mt-10">
+        <div class="flex flex-col md:flex-row md:justify-between gap-8">
 
-      </section>
+            <div>
+                <h1 class="font-bold text-3xl">Greenden</h1>
+                <p class="text-gray-700 max-w-md mt-2">
+                    Greenden helps you bring nature closer to your home with affordable and healthy plants.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold mb-2">Contact</h3>
+                <p class="text-gray-700">📍 Chennai, India</p>
+                <p class="text-gray-700">📧 support@greenden.com</p>
+                <p class="text-gray-700">📞 +91 98765 43210</p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold mb-2">Follow Us</h3>
+                <div class="flex gap-4 text-xl">
+                    <i class="fa-brands fa-instagram cursor-pointer hover:text-black"></i>
+                    <i class="fa-brands fa-facebook cursor-pointer hover:text-black"></i>
+                    <i class="fa-brands fa-twitter cursor-pointer hover:text-black"></i>
+                </div>
+                <p class="text-sm text-gray-600 mt-3">
+                    Secure payments • Fast delivery • Easy returns
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="my-6 border-green-200">
+        <p class="text-sm text-gray-600 text-center">
+            © 2021 Greenden. All rights reserved.
+        </p>
+    </footer>
+
+
+    </section>
 </body>
 
 </html>
